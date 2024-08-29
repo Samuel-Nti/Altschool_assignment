@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1px 0;
+            text-align: center;
+            margin: 20px;
+        }
+       
+        h1 {
+
+            text-align: center;
+            color: #333;
+
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        input[type="text"], 
+        input[type="email"], 
+        input[type="date"], 
+        input[type="tel"], 
+        input[type="password"], 
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .agreement {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            padding: 14px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+        footer {
+            text-align:justify;
+        padding: 10px;
+        background-color: #ffffff;
+        color: rgb(46, 46, 46);
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+    footer p {
+        text-align: center;
+        margin: 0;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Sign Up</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>AltSchool Africa</h1>
+    </header>
+
+
+    <h1>Signup</h1>
+    <p style="text-align:center">Take the next steps to apply at AltSchool Africa</p>
+
+    <form action="#" method="POST">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="ghana">Ghana</option>
+            <option value="Benin">Rwanda</option>
+            <option value="Rwanda">Cote D'Ivorie</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="city">State/City of Residence</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="referral">How did you hear about us?</label>
+        <input type="text" id="referral" name="referral">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+        <p class="agreement">
+            By clicking continue, I agree to <a href="https://altschoolafrica.com/terms-and-conditions">Terms of Use</a> and acknowledge that I have read the <a href="https://altschoolafrica.com/privacy-policy">Privacy Policy</a>.
+        </p>
+
+        <button type="submit">Continue</button>
+    </form>
+    <footer>
+        <p>© 2024 Samuel Nti Nkrumah. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
