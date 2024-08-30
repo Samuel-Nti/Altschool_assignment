@@ -22,12 +22,14 @@
             max-width: 1200px;
             margin: auto;
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
             padding: 20px;
         }
-        .about-column {
+        .about-column, .image-column {
             flex: 1;
             padding: 20px;
+            box-sizing: border-box;
+            min-width: 300px;
         }
         .about-column h2 {
             color: #333;
@@ -36,12 +38,12 @@
             text-align: justify;
         }
         .image-column {
-            flex: 1;
             text-align: center;
         }
         .image-column img {
-            width: 200px;
-            height: 200px;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
@@ -69,6 +71,7 @@
             padding: 0;
             list-style: none;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
         }
         nav ul li {
@@ -84,7 +87,7 @@
             background-color: #4CAF50;
         }
         footer {
-            text-align: justify;
+            text-align: center;
             padding: 10px;
             background-color: #ffffff;
             color: rgb(66, 66, 66);
@@ -93,8 +96,16 @@
             left: 0;
         }
         footer p {
-            text-align: center;
             margin: 0;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            iframe {
+                height: 250px;
+            }
         }
     </style>
 </head>
@@ -129,17 +140,17 @@
         <h2>Check out my YouTube Channel</h2>
         <iframe src="https://www.youtube.com/embed/5MyKAOHNBJ4" title="My Journey in Tech" frameborder="0" allow="accelerometer; autoplay; clipboard-write encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
-            <h2>Listen to My Story</h2>
-            <audio controls>
-                <source src="media/my-story.mp3" type="audio/mpeg">
-                <source src="audio.ogg" type="audio/ogg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-    
-        <footer>
-            <p>© 2024 Samuel Nti Nkrumah. All rights reserved.</p>
-        </footer>
-    
-    </body>
-    </html>
+        <h2>Listen to My Story</h2>
+        <audio controls>
+            <source src="media/my-story.mp3" type="audio/mpeg">
+            <source src="audio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <footer>
+        <p>© 2024 Samuel Nti Nkrumah. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
